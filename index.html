@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div img-comparison-slider {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        img-comparison-slider {
+            --divider-width: 2px;
+            --divider-color: #c0c0c0;
+            --default-handle-opacity: 0.3;
+            --default-handle-color: #000
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            color: rgb(85, 85, 85);
+            background-color: #e7e7e7;
+
+        }
+
+
+
+        pre code {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: block;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <h1>faang.me styling adjustments</h1>
+    <h3><a href="Главная - FAANG.me.html">live demo (open on the phone or narrow screen device)</a></h3>
+    <div>
+        <img-comparison-slider>
+            <img slot="first" src="xl-nav-was.png" />
+            <img slot="second" src="xl-nav-now.png" />
+        </img-comparison-slider>
+    </div>
+    <div>
+        <img-comparison-slider>
+            <img slot="first" src="sm-menu-was.png" />
+            <img slot="second" src="sm-menu-now.png" />
+        </img-comparison-slider>
+    </div>
+    <div> <img-comparison-slider>
+            <img slot="first" src="xs-pay-was.png" />
+            <img slot="second" src="xs-pay-now.png" />
+        </img-comparison-slider>
+    </div>
+
+
+
+
+    <pre>
+        <p>To apply changes to your production page, find the 7470 line on index.html page.</p>
+    <code>
+
+        #e-_4-BIYzeeS0uNR9WBVsfYwA-44 {
+            font-size: 16px;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+    </code>
+    </pre>
+
+    <pre>
+        <p>Insert the CSS code after the element above.</p>
+    <code>
+
+    /* === HOTFIXES ===  */
+
+    /* Payment buttons alignment fix */
+    #e-_4-BIYzeeS0uNR9WBVsfYwA-370,
+    #e-_4-BIYzeeS0uNR9WBVsfYwA-371 {
+      margin: 10px 20px;
+      width: auto;
+      background-color: #ed3330;
+      color: #fff;
+
+    }
+
+
+    /* Выберите валюту... centered */
+    #e-_4-BIYzeeS0uNR9WBVsfYwA-323 {
+      text-align: center;
+    }
+
+
+    /* Close button position fix */
+    body .ez-popup-close {
+      right: 0;
+    }
+
+    #e-_4-BIYzeeS0uNR9WBVsfYwA-394,
+    #e-_4-BIYzeeS0uNR9WBVsfYwA-395 {
+      margin-right: 0px !important;
+    }
+
+    /* Three nav buttons margins/paddings fix */
+    @media only screen and (max-width: 768px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394,
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-395,
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        padding-right: 8px !important;
+        padding-bottom: 0px !important;
+        height: auto !important;
+        padding-top: 0px !important;
+        margin-right: auto !important;
+        width: auto !important;
+        padding-left: 8px !important;
+        margin-top: 25px !important;
+        margin-left: 0.5rem !important;
+        margin-top: 0.3rem !important;
+        margin-bottom: 0.3rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-top: 1.3rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-bottom: 0.8rem !important;
+      }
+    }
+
+    /* Three nav buttons margins/paddings fix */
+    @media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-left: 12rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-right: 12rem !important;
+      }
+
+
+      /* Overflow fix for "получите рекомендации, какую стратегию..." */
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-413 {
+        width: auto;
+      }
+    }
+
+    @media only screen and (min-width: 966px) and (max-width: 992px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-left: 14rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-right: 14rem !important;
+      }
+    }
+
+
+    @media only screen and (min-width: 861px) and (max-width: 965px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-left: 11rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-right: 11rem !important;
+      }
+    }
+
+    @media only screen and (min-width: 797px) and (max-width: 860px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-left: 9rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-right: 9rem !important;
+      }
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 796px) {
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-394 {
+        margin-left: 8rem !important;
+      }
+
+      #e-_4-BIYzeeS0uNR9WBVsfYwA-396 {
+        margin-right: 8rem !important;
+      }
+    }
+
+    </code>
+    </pre>
+
+
+
+
+
+</body>
+
+</html>
